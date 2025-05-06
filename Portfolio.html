@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damien's Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Damien's Portfolio.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1>My <span>Projects</span></h1>
+            <p>Explore my latest work and creative solutions</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Controls -->
+    <section class="portfolio-controls">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search projects..." class="search-input">
+            </div>
+            <div class="tag-filters">
+                <h3>Filter by Tags:</h3>
+                <div class="tags">
+                    <button class="tag-btn" data-tag="all">All</button>
+                    <button class="tag-btn" data-tag="web">Web Development</button>
+                    <button class="tag-btn" data-tag="ai">AI & Integration</button>
+                    <button class="tag-btn" data-tag="future">Future Projects</button>
+                </div>
+            </div>
+            <div class="sort-options">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect" class="sort-select">
+                    <option value="date-desc">Newest First</option>
+                    <option value="date-asc">Oldest First</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid">
+        <div class="container">
+            
+            <!-- Web Development Projects -->
+            <div class="portfolio-category">
+                <h2>Web Development</h2>
+                <div class="projects">
+                    <div class="project-card" data-date="2025-04-01" data-name="Personal Portfolio Website">
+                        <div class="project-header">
+                            <h3>Personal Portfolio Website</h3>
+                        </div>
+                        <div class="project-image">
+                            <img src="assets/project-placeholder.jpg" alt="Personal Portfolio Website">
+                        </div>
+                        <div class="project-info">
+                            <p>A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. Features include project filtering, search functionality, and a clean, professional design that showcases my work and skills effectively.</p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="github-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="index.html" class="live-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI & Integration Projects -->
+            <div class="portfolio-category">
+                <h2>AI & Integration</h2>
+                <div class="projects">
+                    <div class="project-card" data-date="2024-02-20" data-name="AI Chatbot">
+                        <div class="project-image">
+                            <img src="assets/project-placeholder.jpg" alt="AI Chatbot">
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Chatbot</h3>
+                            <p>An intelligent chatbot using natural language processing and API integration.</p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="github-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Projects -->
+            <div class="portfolio-category">
+                <h2>Future Projects</h2>
+                <div class="projects">
+                    <div class="project-card" data-date="2024-04-01" data-name="Project Title">
+                        <div class="project-image">
+                            <img src="assets/project-placeholder.jpg" alt="Future Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Title</h3>
+                            <p>Description of the upcoming project and its goals.</p>
+                        </div>
+                        <div class="project-footer">
+                            <div class="tech-stack">
+                                <span>Technologies</span>
+                                <span>To Be</span>
+                                <span>Used</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="github-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>Have a project in mind? I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn">Contact Me</a>
+                <a href="about.html" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Search and filter functionality
+        const searchInput = document.getElementById('searchInput');
+        const tagButtons = document.querySelectorAll('.tag-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        const sortSelect = document.getElementById('sortSelect');
+        const projectCategories = document.querySelectorAll('.portfolio-category');
+        const portfolioGrid = document.querySelector('.portfolio-grid .container');
+
+        // Add data-tag attributes to project cards
+        document.querySelectorAll('.portfolio-category').forEach(category => {
+            const categoryName = category.querySelector('h2').textContent.toLowerCase();
+            const projects = category.querySelectorAll('.project-card');
+            projects.forEach(project => {
+                if (categoryName.includes('web')) {
+                    project.setAttribute('data-tag', 'web');
+                } else if (categoryName.includes('ai')) {
+                    project.setAttribute('data-tag', 'ai');
+                } else if (categoryName.includes('future')) {
+                    project.setAttribute('data-tag', 'future');
+                }
+            });
+        });
+
+        // Tag filter functionality
+        tagButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tagButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const selectedTag = button.getAttribute('data-tag');
+                filterProjects();
+                updateCategoryTitles(selectedTag);
+                reorderCategories(selectedTag);
+            });
+        });
+
+        // Search functionality
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            filterProjects();
+            updateCategoryTitles(searchTerm);
+            reorderCategories(searchTerm);
+        });
+
+        // Function to update category titles visibility
+        function updateCategoryTitles(searchTerm) {
+            projectCategories.forEach(category => {
+                const categoryTitle = category.querySelector('h2');
+                const categoryName = categoryTitle.textContent.toLowerCase();
+                const projects = category.querySelectorAll('.project-card');
+                let hasVisibleProjects = false;
+
+                // Check if any projects in this category match the search
+                projects.forEach(project => {
+                    const projectName = project.getAttribute('data-name').toLowerCase();
+                    const projectDescription = project.querySelector('.project-info p').textContent.toLowerCase();
+                    if (projectName.includes(searchTerm) || projectDescription.includes(searchTerm)) {
+                        hasVisibleProjects = true;
+                    }
+                });
+
+                // Show/hide category title based on search results
+                if (searchTerm === '' || hasVisibleProjects) {
+                    categoryTitle.style.display = 'block';
+                } else {
+                    categoryTitle.style.display = 'none';
+                }
+            });
+        }
+
+        // Function to reorder categories
+        function reorderCategories(searchTerm) {
+            const categories = Array.from(projectCategories);
+            
+            if (searchTerm === '') {
+                // Reset to original order
+                categories.sort((a, b) => {
+                    const aName = a.querySelector('h2').textContent.toLowerCase();
+                    const bName = b.querySelector('h2').textContent.toLowerCase();
+                    if (aName.includes('web')) return -1;
+                    if (bName.includes('web')) return 1;
+                    if (aName.includes('ai')) return -1;
+                    if (bName.includes('ai')) return 1;
+                    return 0;
+                });
+            } else {
+                // Move categories with matching projects to top
+                categories.sort((a, b) => {
+                    const aProjects = a.querySelectorAll('.project-card');
+                    const bProjects = b.querySelectorAll('.project-card');
+                    let aHasMatch = false;
+                    let bHasMatch = false;
+
+                    aProjects.forEach(project => {
+                        const projectName = project.getAttribute('data-name').toLowerCase();
+                        const projectDescription = project.querySelector('.project-info p').textContent.toLowerCase();
+                        if (projectName.includes(searchTerm) || projectDescription.includes(searchTerm)) {
+                            aHasMatch = true;
+                        }
+                    });
+
+                    bProjects.forEach(project => {
+                        const projectName = project.getAttribute('data-name').toLowerCase();
+                        const projectDescription = project.querySelector('.project-info p').textContent.toLowerCase();
+                        if (projectName.includes(searchTerm) || projectDescription.includes(searchTerm)) {
+                            bHasMatch = true;
+                        }
+                    });
+
+                    if (aHasMatch && !bHasMatch) return -1;
+                    if (!aHasMatch && bHasMatch) return 1;
+                    return 0;
+                });
+            }
+
+            // Re-append categories in new order
+            categories.forEach(category => {
+                portfolioGrid.appendChild(category);
+            });
+        }
+
+        // Combined filter function
+        function filterProjects() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const activeTag = document.querySelector('.tag-btn.active').getAttribute('data-tag');
+
+            projectCards.forEach(card => {
+                const cardText = card.textContent.toLowerCase();
+                const cardTag = card.getAttribute('data-tag');
+                const matchesSearch = cardText.includes(searchTerm);
+                const matchesTag = activeTag === 'all' || cardTag === activeTag;
+
+                if (matchesSearch && matchesTag) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Existing sorting functionality
+        sortSelect.addEventListener('change', () => {
+            const sortValue = sortSelect.value;
+            
+            projectCategories.forEach(category => {
+                const projects = category.querySelector('.projects');
+                const cards = Array.from(category.querySelectorAll('.project-card'));
+                
+                cards.sort((a, b) => {
+                    if (sortValue === 'date-desc' || sortValue === 'date-asc') {
+                        const dateA = new Date(a.getAttribute('data-date'));
+                        const dateB = new Date(b.getAttribute('data-date'));
+                        return sortValue === 'date-desc' ? dateB - dateA : dateA - dateB;
+                    } else {
+                        const nameA = a.getAttribute('data-name').toLowerCase();
+                        const nameB = b.getAttribute('data-name').toLowerCase();
+                        return sortValue === 'name-asc' ? 
+                            nameA.localeCompare(nameB) : 
+                            nameB.localeCompare(nameA);
+                    }
+                });
+                
+                // Clear and re-append sorted cards
+                projects.innerHTML = '';
+                cards.forEach(card => projects.appendChild(card));
+            });
+        });
+
+        // Initialize with 'All' tag active
+        document.querySelector('.tag-btn[data-tag="all"]').classList.add('active');
+    </script>
+</body>
+</html>
